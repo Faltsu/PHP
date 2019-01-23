@@ -19,6 +19,8 @@
 			<a href="whileloop.php" >While loop</a>
 			<br>
 			<a href="forloop.php" >For loop</a>
+			<br>
+			<a href="length.php" >Word lenght</a>
 	</div>
 
 </body>
