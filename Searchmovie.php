@@ -10,7 +10,7 @@ $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
 $dbname = "moviedb";
-$etsi;
+$etsi = $_POST['etsi'];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
