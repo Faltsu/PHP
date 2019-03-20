@@ -12,7 +12,7 @@
     </div>
     <div class=col-sm-8>
       <form action="Searchmovie.php" method="post">
-      <input type="text" >
+      <input type="text" name="etsi">
       <input type="submit" value="Etsi">
       <input type="submit" value="Lisää elokuva"
 		
