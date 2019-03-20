@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
 } else {
-    echo $dbname
+    echo $dbname;
 	echo ($etsi);
 	echo "0 results";
 }
