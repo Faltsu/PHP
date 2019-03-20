@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Getmovies</title>
 </head>
 <body>
 <?php
@@ -24,7 +24,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"]"<br>";
+        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"]."<br>";
     }
 } else {
     echo "0 results";
