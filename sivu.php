@@ -11,10 +11,11 @@
     <p>Elokuvan nimi
     </div>
     <div class=col-sm-8>
-      <form>
+      <form action="Searchmovie.php" method="post">
       <input type="text" >
       <input type="submit" value="Etsi">
       <input type="submit" value="Lisää elokuva"
+		
       </form>
     </div>
   </div>
