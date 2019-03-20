@@ -27,7 +27,8 @@ if ($result->num_rows > 0) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
 } else {
-    echo "0 results";
+    echo "$_POST";
+	echo "0 results";
 }
 
 $conn->close();
