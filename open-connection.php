@@ -1,8 +1,8 @@
 <?php
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
+$connectstr_dbhost = '127.0.0.1:50367';
+$connectstr_dbname = 'moviedb';
+$connectstr_dbusername = 'azure';
+$connectstr_dbpassword = '6#vWHD_$';
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
