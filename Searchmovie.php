@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
 } else {
-    echo $_POST;
+    echo $etsi;
 	echo "0 results";
 }
 
