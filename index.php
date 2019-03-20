@@ -9,7 +9,7 @@
 <body>
     <h1>PHP code examples </h1>
 
-	<div>	
+	<div>
 			<a href="helloworld.php" >Hello World</a>
 			<br>
 			<a href="basicinput.php" >Basic input</a>
@@ -21,6 +21,8 @@
 			<a href="forloop.php" >For loop</a>
 			<br>
 			<a href="length.php" >Word lenght</a>
+      <br>
+      <a href="sivu.php">elokuvasivu</a>
 	</div>
 
 </body>
