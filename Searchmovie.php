@@ -18,7 +18,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT MName, MDesc FROM movie WHERE MName LIKE '$etsi'";
+$sql = "SELECT MName, MDesc FROM movie WHERE MName LIKE "$etsi";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
