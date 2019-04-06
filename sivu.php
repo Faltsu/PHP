@@ -16,6 +16,7 @@
       <input type="submit" value="Etsi">
       </form>
       <form action="addmovie.php" method="post">
+      <input type="text" name="lisaa">
       <input type="submit" value="Lisää elokuva">
       </form>
       

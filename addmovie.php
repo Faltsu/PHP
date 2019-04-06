@@ -10,7 +10,7 @@ $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
 $dbname = "moviedb";
-$etsi = $_POST["etsi"];
+$lisaa = $_POST["lisaa"];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 
 //$sql = "SELECT MName, MDesc FROM movie WHERE MName LIKE '%$etsi%'";
-$sql = "INSERT INTO movie (MName) VALUES ($etsi)"
+$sql = "INSERT INTO movie (MName) VALUES ($lisaa)"
 
 if ($conn->query($sql)===TRUE){
     echo "Tallennettu";
