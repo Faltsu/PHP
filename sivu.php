@@ -15,7 +15,7 @@
       <input type="text" name="etsi">
       <input type="submit" value="Etsi">
       </form>
-      <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+      <form action="addmovie.php" method="post">
       <input type="text" name="lisaa">
       <input type="submit" value="Lisää elokuva">
       </form>
