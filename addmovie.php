@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-mysql_select_db($username, $con)
+//onks nimet oikei
 $sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')"
 
 if ($conn->query($sql)===TRUE){
