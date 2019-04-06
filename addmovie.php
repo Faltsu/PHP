@@ -18,7 +18,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//$sql = "SELECT MName, MDesc FROM movie WHERE MName LIKE '%$etsi%'";
 $sql = "INSERT INTO movie (MName) VALUES ($lisaa)"
 
 if ($conn->query($sql)===TRUE){
