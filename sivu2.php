@@ -16,6 +16,9 @@
       <input type="text" name="arvostelu">
       <input type="submit" value="Lisää elokuva ja tiedot">
       </form>
+      <form action="/sivu.php">
+        <input type="submit" value="Palaa"/>
+      </form>
 
     </div>
   </div>
