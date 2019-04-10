@@ -18,13 +18,11 @@ if ($conn->connect_error) {
 }
 
 //onks nimet oikei
-$sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')"
+$sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
 
 if ($conn->query($sql)===TRUE){
     echo "Tallennettu";
-    else{
-        echo "Tallennus epäonnistui";
-    }
+
 }
 
 $conn->close();
