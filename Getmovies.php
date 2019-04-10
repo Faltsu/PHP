@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
 } else {
-    echo "0 results";
+    echo "EI LÖYDY ELOKUVAA!";
 }
 
 $conn->close();
