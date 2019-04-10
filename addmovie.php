@@ -23,15 +23,17 @@ if ($conn->connect_error) {
 //onks nimet oikei
 $sql = "INSERT INTO movie (MName) VALUES ($uusielokuva)";
 
-if ($conn->query($sql)===TRUE){
-    echo "Tallennettu";
+$result=mysql_query($sql) or die("Epäonnistui");
 }
-    else{
-        echo "Tallennus epäonnistui";
-    }
+//if ($conn->query($sql)===TRUE){
+//    echo "Tallennettu";
+//}
+//    else{
+//        echo "Tallennus epäonnistui";
+//    }
 
 
-$conn->close();
+//$conn->close();
 ?>
 
 
