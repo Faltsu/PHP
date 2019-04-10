@@ -22,8 +22,11 @@ $sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
 
 if ($conn->query($sql)===TRUE){
     echo "Tallennettu";
-
 }
+    else{
+        echo "Tallennus epäonnistui";
+    }
+
 
 $conn->close();
 ?>
