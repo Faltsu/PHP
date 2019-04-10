@@ -10,6 +10,9 @@ $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
 $dbname = "moviedb";
+
+//testi
+$uusielokuva = $_POST['lisaa']
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -18,7 +21,7 @@ if ($conn->connect_error) {
 }
 
 //onks nimet oikei
-$sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
+$sql = "INSERT INTO movie (MName) VALUES ($uusielokuva)";
 
 if ($conn->query($sql)===TRUE){
     echo "Tallennettu";
