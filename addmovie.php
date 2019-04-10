@@ -17,8 +17,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$uusielokuva = $_POST['lisaa']
-$sql = "INSERT INTO movie (MName) VALUES ($uusielokuva)";
+
+$sql = "INSERT INTO movie (MName) VALUES ($_POSTI['lisaa'])";
 
 
 if ($conn->query($sql)===TRUE){
