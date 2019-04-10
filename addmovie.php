@@ -20,20 +20,19 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//onks nimet oikei
+
 $sql = "INSERT INTO movie (MName) VALUES ($uusielokuva)";
 
-$result=mysql_query($sql) or die("Epäonnistui");
+
+if ($conn->query($sql)===TRUE){
+   echo "Tallennettu";
 }
-//if ($conn->query($sql)===TRUE){
-//    echo "Tallennettu";
-//}
-//    else{
-//        echo "Tallennus epäonnistui";
-//    }
+    else{
+        echo "Tallennus epäonnistui";
+    }
 
 
-//$conn->close();
+$conn->close();
 ?>
 
 
