@@ -18,7 +18,8 @@
 
       <form action="addmovie.php" method="post">
       <input type="text" name="lisaa">
-      <input type="submit" value="Lisää elokuva">
+      <input type="text" name="arvostelu">
+      <input type="submit" value="Lisää elokuva ja tiedot">
       </form>
 
       <form action="arvostelu.php" method="post">
