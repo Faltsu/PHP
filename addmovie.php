@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO movie (MName) VALUES ($_POST['lisaa'])";
+$sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
 
 
 if ($conn->query($sql)===TRUE){
