@@ -22,7 +22,7 @@ $sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
 $sql1="INSERT INTO movie(MDesc) VALUES ('$_POST[arvostelu]')"
 
 
-if ($conn->query($sql,$sql1)===TRUE){
+if ($conn->query($sql)===TRUE) and ($conn->query($sql1)===TRUE){
    echo "Tallennettu";
 }
     else{
