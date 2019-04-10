@@ -18,12 +18,12 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO movie (MName) VALUES ('$_POST[lisaa]')";
-$sql .= "INSERT INTO movie(MDesc) VALUES ('$_POST[arvostelu]')"
+$sql = "INSERT INTO movie (MName, MDesc) VALUES ('$_POST[lisaa]', '$_POST[arvostelu]')";
 
 
-if ($conn->multi_query($sql)===TRUE){
+if ($conn->query($sql)===TRUE){
    echo "Tallennettu";
+
 }
     else{
         echo "Tallennus epäonnistui";
