@@ -39,7 +39,7 @@ $conn->close();
 ?>
 <div class="row">
  <div class=col-sm-12>
-   <textarea name="arvostelukenttä" form="arvosteluform">Kirjotia arvostelu tähän</textarea>
+   <textarea name="arvostelukentta" form="arvosteluform">Kirjotia arvostelu tähän</textarea>
    <form action="arvostelu.php" id="arvosteluform">
      <input type="submit" name="Tallenna arvostelu">
    </form>
