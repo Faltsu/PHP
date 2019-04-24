@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
-$sql2 = "SELECT idMovie FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
+$sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
 $id = $conn->query($sql2);
 
