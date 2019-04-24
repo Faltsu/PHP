@@ -9,8 +9,7 @@
       //Elokuva arvostelu näppäin. EI TEHTY VIELÄ.
      <div class=col-sm-12>
        <form action="arvostelu.php" id="arvosteluform">
-         <input type="text" name="arvostelu">
-         <input type="submit">
+         <input type="submit" name="Tallenna arvostelu">
        </form>
 
        <textarea name="arvostelukenttä" form="arvosteluform">Kirjotia arvostelu tähän</textarea>
