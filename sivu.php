@@ -15,12 +15,6 @@
       <input type="text" name="etsi">
       <input type="submit" value="Etsi">
       </form>
-      //Elokuva arvostelu näppäin. EI TEHTY VIELÄ.
-     <div class=col-sm-8>
-      <form action="elokuvaarvostelu.php" method="post">
-      <input type="submit" value="Tee arvostelu">
-      </form>
-
       <form action="/sivu2.php">
         <input type="submit" value="Lisää elokuva"/>
       </form>
