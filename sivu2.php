@@ -7,10 +7,10 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class=col-sm-4>
+      <div class="col-sm-12 text-center">
     <p>Elokuvan nimi
     </div>
-    <div class=col-sm-8>
+    <div class="col-sm-12 text-center">
       <form action="addmovie.php" method="post">
       <input type="text" name="lisaa">
       <input type="text" name="arvostelu">
