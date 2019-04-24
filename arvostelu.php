@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+Session_start();
 $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
@@ -16,15 +17,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-    
-    $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
-    $result2=mysqli_query($conn,$sql2);
-    // Numeric array
-$row=mysqli_fetch_array($result2,MYSQLI_NUM);
-$id=$row[0];
+$idlahetti=$_Session['id'];
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
-echo $id;
+echo $idlahetti;
+    echo "asd";
+    echo $id;
+   
 
 if ($conn->query($sql)===TRUE){
    echo "Tallennettu";
