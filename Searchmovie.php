@@ -44,14 +44,11 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-<div class="row">
- <div class=col-sm-12>
-  <form method=POST action="/arvostelu.php" id="usrform">
-  <textarea name="Arvostelukentta" form="usrform">Kirjoita arvostelu tähän</textarea> 
-  <input type="submit">
-</form>
-
-
+<div class="col-sm-12 text-center">
+      <form action="arvostelu.php" method="post">
+      <input type="text" name="arvostelukentta">
+      <input type="submit" value="Arvostele elokuva">
+      </form>
 	 
  </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
