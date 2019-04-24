@@ -26,7 +26,7 @@ $result2=mysqli_query($conn,$sql2);
 
 // Numeric array
 $row=mysqli_fetch_array($result2,MYSQLI_NUM);
-printf ("%s (%s)\n",$row[0],$row[1]);
+printf ("%s (%s)\n",$row[0]);
 
 
  
