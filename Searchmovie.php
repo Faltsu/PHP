@@ -27,7 +27,7 @@ $id = $conn->query($sql2);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"] .$row[$id];
+        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"] .$row["idMovie"];
 	echo $id;
     }
 } else {
