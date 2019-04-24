@@ -21,6 +21,7 @@ $id=$_SESSION["id"];
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
 echo "$id";
+    echo "$_POST[arvostelukentta]";
    
 
 if ($conn->query($sql)===TRUE){
