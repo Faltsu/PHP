@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-Session_start();
+session_start();
 $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
