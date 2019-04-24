@@ -22,9 +22,13 @@ if ($conn->connect_error) {
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
-$id = mysql_query("SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1");
-$seppo = $conn->query($id);
-echo $seppo;
+$result2=mysqli_query($conn,$sql2);
+
+// Numeric array
+$row=mysqli_fetch_array($result,MYSQLI_NUM);
+printf ("%s (%s)\n",$row[0],$row[1]);
+
+
  
 	
 if ($result->num_rows > 0) {
