@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 $id=$_SESSION["id"];
 
-$sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]')";
+$sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvosteluform]', '$id')";
 echo "$id";
    
 
