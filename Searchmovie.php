@@ -28,8 +28,7 @@ $result2=mysqli_query($conn,$sql2);
 // Numeric array
 $row=mysqli_fetch_array($result2,MYSQLI_NUM);
 $id=$row[0];
-$_SESSION['id'] = $idlahetti;
-
+$_SESSION["id"] = $id;
  
 	
 if ($result->num_rows > 0) {
