@@ -16,7 +16,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$id = unserialize(base64_decode($_POST["idlahetti"]));
     
     $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
     $result2=mysqli_query($conn,$sql2);
