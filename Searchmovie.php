@@ -23,7 +23,7 @@ $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
 $id = mysql_query("SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1");
-$seppo = $conn->query($id)
+$seppo = $conn->query($id);
 echo $seppo;
  
 	
