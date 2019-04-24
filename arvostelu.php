@@ -17,7 +17,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$idlahetti=$_Session['id'];
+$id=$_Session['id'];
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$idlahetti')";
 echo $idlahetti;
