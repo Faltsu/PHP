@@ -17,6 +17,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 $id = unserialize(base64_decode($_POST["idlahetti"]));
+    
+    $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
+    $result2=mysqli_query($conn,$sql2);
+    // Numeric array
+$row=mysqli_fetch_array($result2,MYSQLI_NUM);
+$id=$row[0];
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
 echo $id;
