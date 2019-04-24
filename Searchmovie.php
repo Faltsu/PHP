@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php
+Session_start();
 $servername = "127.0.0.1:50367";
 $username = "azure";
 $password = "6#vWHD_$";
@@ -27,7 +28,7 @@ $result2=mysqli_query($conn,$sql2);
 // Numeric array
 $row=mysqli_fetch_array($result2,MYSQLI_NUM);
 $id=$row[0];
-
+$_SESSION['id'] = $idlahetti;
 
  
 	
