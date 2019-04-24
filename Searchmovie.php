@@ -31,7 +31,8 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"] .$row["idMovie"];
-
+	echo $id;
+	    echo $seppo;
     }
 } else {
 	echo $etsi;
