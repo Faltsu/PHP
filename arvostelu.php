@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO rating (RDesc) VALUES ('$_POST[arvostelukentta]')";
+$sql = "INSERT INTO rating (RDesc) VALUES ('$_POST[arvosteluform]')";
 
 
 if ($conn->query($sql)===TRUE){
