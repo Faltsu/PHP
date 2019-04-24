@@ -16,9 +16,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+$id = unserialize(base64_decode($_POST["idlahetti"]));
 
-
-$sql = "INSERT INTO rating (RDesc) VALUES ('$_POST[arvostelukentta]')";
+$sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
 
 
 if ($conn->query($sql)===TRUE){
