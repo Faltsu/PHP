@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "INSERT INTO movie (MDesc) VALUES ('$_POST[arvostelukenttä]')";
+$sql = "INSERT INTO movie (MDesc) VALUES ('$_POST[arvostelukentta]')";
 
 
 if ($conn->query($sql)===TRUE){
