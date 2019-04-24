@@ -31,6 +31,7 @@ if ($result->num_rows > 0) {
     }
 } else {
 	echo $etsi;
+	echo $id;
 	echo "<br>0 results";
 }
 
