@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 $id = unserialize(base64_decode($_POST["idlahetti"]));
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
-
+echo $id;
 
 if ($conn->query($sql)===TRUE){
    echo "Tallennettu";
