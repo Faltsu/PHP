@@ -23,12 +23,12 @@ $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
 $id = $conn->query($sql2);
-
+echo $id;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"] .$row["idMovie"];
-	echo $id;
+
     }
 } else {
 	echo $etsi;
