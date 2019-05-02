@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(210, 232, 241);
+    background-color:rgb(228, 227, 227);
 }
 #otsikko{
     font-size: 30px;
@@ -11,6 +11,9 @@ input[type=text]{
     padding: 10px 10px;
     margin: 10px;
     box-sizing: border-box;
+}
+input[type=text]:focus{
+    border:2px solid rgb(133, 220, 247);
 }
 input[type=submit]{
     width:50%;
