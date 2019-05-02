@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Getmovies</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
 <?php
@@ -32,7 +33,11 @@ if ($conn->query($sql)===TRUE){
 
 $conn->close();
 ?>
-
+<div class="col-sm-12 text-center">
+<form action="/sivu.php">
+        <input type="submit" value="Etusivulle"/>
+      </form>
+</div>
 
 </body>
 </html>
