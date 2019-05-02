@@ -35,12 +35,12 @@ $_SESSION["id"] = $id;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"] .$row["idMovie"];
+        echo "<br> Elokuvan nimi: ". $row["MName"]. " - Kuvaus: ". $row["MDesc"];
 	
     }
 } else {
 	echo $etsi;
-	echo "<br>0 results";
+	echo "Elokuvaa ei löydy.";
 }
 
 $conn->close();
