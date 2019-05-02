@@ -10,7 +10,7 @@
       <div class="col-sm-12 text-center">
         <p id="otsikko">Etsi elokuva antamalla elokuvan nimi
           <br>
-          tai kirjoita elokuvan nimi jonka haluat lisätä tietokantaan</p>
+          Lisää elokuva painamalla "Lisää elokuva"</p>
           
       </div>
     <div class="col-sm-12 text-center">
