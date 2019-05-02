@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="col-sm-12 text-center">
+        <!-- otsikko div alkaa-->
+        <div id="otsikko">
 <?php
 session_start();
 $servername = "127.0.0.1:50367";
@@ -46,6 +48,8 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+<!-- Otsikko div loppuu-->
+</div>
 <div class="col-sm-12 text-center">
       <form action="arvostelu.php" method="post">
       <input type="text" name="arvostelukentta">
