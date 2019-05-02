@@ -37,7 +37,7 @@ $_SESSION["id"] = $id;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br>Elokuvan nimi: ". $row["MName"]. "<br>Kuvaus: ". $row["MDesc"]. "<br> Arvostele elokuva";
+        echo "Elokuvan nimi: ". $row["MName"]. "<br>Kuvaus: ". $row["MDesc"]. "<br> Arvostele elokuva";
 	
     }
 } else {
