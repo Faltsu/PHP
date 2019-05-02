@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+<div class="col-sm-12 text-center">
 <?php
 $servername = "127.0.0.1:50367";
 $username = "azure";
@@ -33,7 +34,7 @@ if ($conn->query($sql)===TRUE){
 
 $conn->close();
 ?>
-<div class="col-sm-12 text-center">
+
 <form action="/sivu.php">
         <input type="submit" value="Etusivulle"/>
       </form>
