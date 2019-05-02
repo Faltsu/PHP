@@ -37,7 +37,11 @@ if ($conn->query($sql)===TRUE){
 
 $conn->close();
 ?>
-
+<div class="col-12-sm text-center">
+<form action="/sivu.php">
+            <input type="submit" value="Etusivulle">
+        </form>
+</div>
 </div>
 </body>
 </html>
