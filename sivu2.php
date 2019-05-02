@@ -14,6 +14,7 @@
     <div class="col-sm-12 text-center">
       <form action="addmovie.php" method="post">
       <input type="text" name="lisaa">
+      Elokuvan kuvaus</p>
       <input type="text" name="arvostelu">
       <input type="submit" value="Lisää elokuva ja tiedot">
       </form>
