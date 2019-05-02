@@ -9,12 +9,12 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-    <p id="otsikko">Elokuvan nimi
+    <p id="otsikko">Elokuvan nimi</p>
     </div>
     <div class="col-sm-12 text-center">
       <form action="addmovie.php" method="post">
       <input type="text" name="lisaa">
-      Elokuvan kuvaus</p>
+      <p id="otsikko">Elokuvan kuvaus</p>
       <input type="text" name="arvostelu">
       <input type="submit" value="Lisää elokuva ja tiedot">
       </form>
