@@ -23,7 +23,7 @@ $sql = "INSERT INTO movie (MName, MDesc) VALUES ('$_POST[lisaa]', '$_POST[arvost
 
 
 if ($conn->query($sql)===TRUE){
-   echo "Tallennettu";
+   echo "<p id=otsikko>Tallennettu";
 
 }
     else{
