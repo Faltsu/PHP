@@ -12,3 +12,9 @@ input[type=text]{
     margin: 10px;
     box-sizing: border-box;
 }
+input[type=submit]{
+    width:50%;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
