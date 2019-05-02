@@ -28,7 +28,7 @@ echo "<p id=otsikko>Arvostelu tallennettu</p>";
    
 
 if ($conn->query($sql)===TRUE){
-   echo "arvostelu allennettu";
+   echo "Arvostelu tallennettu!";
 }
     else{
         echo "Tallennus epäonnistui";
