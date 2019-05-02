@@ -8,7 +8,7 @@
 <body>
   <div class="container">
       <div class="col-sm-12 text-center">
-        <p id="otsikko">Elokuvan nimi
+        <p id="otsikko">Etsi elokuva antamalla elokuvan nimi
       </div>
     <div class="col-sm-12 text-center">
       <form action="Searchmovie.php" method="post">
