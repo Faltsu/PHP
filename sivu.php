@@ -9,6 +9,9 @@
   <div class="container">
       <div class="col-sm-12 text-center">
         <p id="otsikko">Etsi elokuva antamalla elokuvan nimi
+          <br>
+          tai kirjoita elokuvan nimi jonka haluat lisätä tietokantaan</p>
+          
       </div>
     <div class="col-sm-12 text-center">
       <form action="Searchmovie.php" method="post">
