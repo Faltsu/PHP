@@ -6,6 +6,7 @@
 <title>Getmovies</title>
 </head>
 <body>
+    <div class="col-sm-12 text-center">
 <?php
 session_start();
 $servername = "127.0.0.1:50367";
