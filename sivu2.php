@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-    <p>Elokuvan nimi
+    <p id="otsikko">Elokuvan nimi
     </div>
     <div class="col-sm-12 text-center">
       <form action="addmovie.php" method="post">
@@ -17,7 +18,7 @@
       <input type="submit" value="Lisää elokuva ja tiedot">
       </form>
       <form action="/sivu.php">
-        <input type="submit" value="Palaa"/>
+        <input type="submit" value="Etusivulle"/>
       </form>
 
     </div>
