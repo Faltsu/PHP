@@ -24,11 +24,11 @@ $id=$_SESSION["id"];
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
 // echo "$id";
 echo "<p id=otsikko>Arvostelu tallennettu</p>";
-    echo "$_POST[arvostelukentta]";
+    echo "$_POST[arvostelukentta]. ";
    
 
 if ($conn->query($sql)===TRUE){
-   echo "Tallennettu";
+   echo "arvostelu allennettu";
 }
     else{
         echo "Tallennus epäonnistui";
