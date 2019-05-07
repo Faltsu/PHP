@@ -18,39 +18,27 @@ if (empty($etsi)) {
   echo "Et antanut nimeä";
 }
 else {
-$sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%?%' LIMIT 1";
-$stmt= mysqli_stmt_init($conn);
-if (!mysqli_stmt_prepare($stmt, $sql)) {
-  echo "SQL statement failed";
-}
-  else {
-    mysqli_stmt_bind_param($stmt, "s", $etsi);
-    mysqli_stmt_excecute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
-    if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "Elokuvan nimi: ". $row["MName"]. "<br>Kuvaus: ". $row["MDesc"]. "<br> Arvostele elokuva";
-  
-    }
-} 
-  else {
-  echo $etsi;
-  echo " nimistä elokuvaa ei löydy.";
-  $stop="yes";
-}
-  }
-
-
+$sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
+$result = $conn->query($sql);
 $result2=mysqli_query($conn,$sql2);
 // Tallenna id arvostelua varten
 $row=mysqli_fetch_array($result2,MYSQLI_NUM);
 $id=$row[0];
 $_SESSION["id"] = $id;
  
-	
-
+  
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "Elokuvan nimi: ". $row["MName"]. "<br>Kuvaus: ". $row["MDesc"]. "<br> Arvostele elokuva";
+  
+    }
+} else {
+  echo $etsi;
+  echo " nimistä elokuvaa ei löydy.";
+  $stop="yes";
+}
 //<!-- else loppuu -->
 }
 $conn->close();
