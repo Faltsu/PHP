@@ -9,8 +9,9 @@
 <div class="col-sm-12 text-center">
 <?php
 include_once 'conn.php';
-
-$sql = "INSERT INTO movie (MName, MDesc) VALUES ('$_POST[lisaa]', '$_POST[arvostelu]')";
+$lisaa =mysqli_real_escape_string($conn, $_POST["lisaa"]);
+$arvostelu =mysqli_real_escape_string($conn, $_POST["arvostelu"]);
+$sql = "INSERT INTO movie (MName, MDesc) VALUES ('$lisaa', '$arvostelu')";
 
 
 if ($conn->query($sql)===TRUE){
@@ -18,7 +19,7 @@ if ($conn->query($sql)===TRUE){
 
 }
     else{
-        echo "Tallennus epäonnistui";
+        echo "<p id=otsikko>Tallennus epäonnistui";
     }
 
 
