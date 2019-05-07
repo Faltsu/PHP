@@ -13,7 +13,7 @@
     Elokuvalista
         </div>
         
-<div id="lista">
+<div id="lista2">
 <?php
     include_once 'conn.php';
 
