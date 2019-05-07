@@ -3,8 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>Getmovies</title>
+<meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+    <div class="col-sm-12 text-center">
+        <!-- otsikko div alkaa-->
+<div id="otsikko">
 <?php
 $servername = "127.0.0.1:50367";
 $username = "azure";
@@ -33,7 +39,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
-
+<!-- otsikko div loppuu-->
+</div>
 </body>
 </html>
