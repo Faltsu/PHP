@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="col-sm-12 text-center">
-        <!-- otsikko div alkaa-->
+        <!--css div alkaa-->
+<div id="otsikko">
+    Elokuvalista
+        </div>
+        
 <div id="lista">
 <?php
 $servername = "127.0.0.1:50367";
@@ -38,7 +42,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-<!-- otsikko div loppuu-->
+<!--css div loppuu-->
 </div>
 </body>
 </html>
