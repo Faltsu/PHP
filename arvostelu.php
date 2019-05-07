@@ -16,10 +16,10 @@ $sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentt
 // echo "$id";
 echo "<p id=otsikko>Arvostelu tallennettu</p>";
     echo "$_POST[arvostelukentta]. ";
-    echo "$id";
 
 if ($conn->query($sql)===TRUE){
    echo "Arvostelu tallennettu!";
+   echo $conn->error;
 }
     else{
         echo "Tallennus epäonnistui";
