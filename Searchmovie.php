@@ -10,7 +10,7 @@
 <div class="header">
   <div class="col-sm-12 text-center">
     <p id="oikeeotsikko">
-      Elokuvadatabase
+      Elokuvadatabase1
     </p>
   </div>
 </div>
@@ -65,6 +65,7 @@ $conn->close();
 <?php
 }  
     else { ?>
+    </div>
 <div class="col-sm-12 text-center">
   <form action="/arvostelusivu.php">
     <input type="submit" value="Katso elokuvan arvostelut">
