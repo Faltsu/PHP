@@ -20,7 +20,7 @@ include_once 'conn.php';
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 //echo $id;
 $sql = "SELECT MName, MDesc FROM movie WHERE idMovie=$id";
-$sql2= "SELECT RRating, RDesc  FROM rating WHERE movie_idMovie=$id";
+$sql2= "SELECT RRating, RDesc FROM rating WHERE movie_idMovie=$id";
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2);
 
@@ -33,8 +33,8 @@ if ($result->num_rows > 0) {
 }
 if ($result2->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
-        echo "<br> Numero: ". $row["rating.RRating"]. " - Kuvaus: ". $row["rating.RDesc"];
+    while($row = $result2->fetch_assoc()) {
+        echo "<br> Numero: ". $row["RRating"]. " - Kuvaus: ". $row["RDesc"];
     }
 }
 $conn->close();
