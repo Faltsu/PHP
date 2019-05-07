@@ -22,7 +22,7 @@
         <input type="submit" value="Lisää elokuva"/>
       </form>
             <form action="/elokuvalista.php">
-        <input type="submit" value="Lista kaikista elokuvista"/>
+        <input type="submit" value="Listaa elokuvat"/>
       </form>
     </div>
  
