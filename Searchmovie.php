@@ -56,6 +56,9 @@ $conn->close();
 }  
     else { ?>
 <div class="col-sm-12 text-center">
+  <form action="/arvostelusivu.php">
+    <input type="submit" value="Katso elokuvan arvostelut">
+  </form>
       <form action="arvostelu.php" method="post">
       <input type="text" name="arvostelukentta">
   <select name="arvosana">
