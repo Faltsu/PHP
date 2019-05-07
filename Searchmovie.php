@@ -11,18 +11,7 @@
         <div id="otsikko">
 <?php
 session_start();
-$servername = "127.0.0.1:50367";
-$username = "azure";
-$password = "6#vWHD_$";
-$dbname = "moviedb";
-$etsi = $_POST["etsi"];
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include_once 'conn.php';
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
