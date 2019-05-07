@@ -28,13 +28,13 @@ $result2 = $conn->query($sql2);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Nimi: ". $row["MName"]. " - Kuvaus: ". $row["MDesc"];
+        echo "<br> Elokuvan Nimi: ". $row["MName"]. " - Kuvaus: ". $row["MDesc"];
     }
 }
 if ($result2->num_rows > 0) {
     // output data of each row
     while($row = $result2->fetch_assoc()) {
-        echo "<br> Numero: ". $row["RRating"]. " - Kuvaus: ". $row["RDesc"];
+        echo "<br> Arvosana: ". $row["RRating"]. " - Arvostelu: ". $row["RDesc"];
     }
 }
 $conn->close();
