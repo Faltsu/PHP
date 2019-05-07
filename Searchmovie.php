@@ -43,6 +43,7 @@ $conn->close();
       <form action="arvostelu.php" method="post">
       <input type="text" name="arvostelukentta">
   <select name="arvosana">
+    <option value="">Valitse arvosana</option>
     <option value="4">4</option>
     <option value="5">5</option>
     <option value="6">6</option>
