@@ -31,11 +31,13 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-          <!-- nappi joka palaa etusivulle -->
+    </div>
+    <div id="otsikko">            
+    <!-- nappi joka palaa etusivulle -->
         <form action="/sivu.php">
             <input type="submit" value="Etusivulle">
-</form>
+        </form>
+        </div> 
 <!--css div loppuu-->
-</div>
 </body>
 </html>
