@@ -7,8 +7,17 @@
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+<!--Headeri-->
+<div class="header">
+  <div class="col-sm-12 text-center">
+    <p id="oikeeotsikko">
+      Elokuvadatabase
+    </p>
+  </div>
+</div>
+<!-- container -->
+<div class="container">
     <div class="col-sm-12 text-center">
-        <!--css div alkaa-->
 <div id="otsikko">
     Elokuvalista
         </div>
@@ -39,7 +48,14 @@ $conn->close();
         </form>
         </div>
         </div> 
-<!--css div loppuu-->
+<!--Footer-->
+<div class="footer">
+      <div class="col-sm-12 text-center"> 
+        <p>Tehnyt Kim Laakso ja Jarkko Hämäläinen</p>
+      </div>
+    </div>
+    <!--container loppuu-->
+    </div>
 </body>
 </html>
 
