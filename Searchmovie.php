@@ -14,7 +14,7 @@ session_start();
 include_once 'conn.php';
 $etsi = $_POST["etsi"];
 if ($etsi="") {
-  echo "Et antanut nimeä"
+  echo "Et antanut nimeä";
 }
 else {
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
