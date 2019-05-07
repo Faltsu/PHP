@@ -12,6 +12,7 @@
 <?php
 session_start();
 include_once 'conn.php';
+$etsi = $_POST["etsi"];
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
