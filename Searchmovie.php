@@ -13,7 +13,7 @@
 session_start();
 include_once 'conn.php';
 $etsi = $_POST["etsi"];
-if ($etsi="") {
+if (empty($etsi)) {
   echo "Et antanut nimeä";
 }
 else {
