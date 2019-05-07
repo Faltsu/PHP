@@ -14,9 +14,9 @@ $id=$_SESSION["id"];
 
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$_POST[arvostelukentta]', '$id', '$_POST[arvosana]')";
 // echo "$id";
-echo "<p id=otsikko>Arvostelu tallennettu</p>";
-    echo "$_POST[arvostelukentta]. ";
- //   echo "$_POST[arvosana]";
+// echo "<p id=otsikko>Arvostelu tallennettu</p>";
+// echo "$_POST[arvostelukentta]. ";
+// echo "$_POST[arvosana]";
 if ($conn->query($sql)===TRUE){
    echo "<p id=otsikko>Arvostelu tallennettu</p>";
 }
