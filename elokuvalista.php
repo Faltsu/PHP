@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
         echo $row["MDesc"];
         echo "</TD></tr>";
     }
+    echo "</table>";
 } else {
     echo "EI LÖYDY ELOKUVAA!";
 }
@@ -48,17 +49,3 @@ $conn->close();
 <!--css div loppuu-->
 </body>
 </html>
-
- 
-while($row = mysqli_fetch_array($results))
-{
-  echo"<TR><TD>Name</TD><TD>Description:</TD><TD>Status</TD></TR>"; 
-  echo "<tr><td>"; 
-  echo $row['name'];
-  echo "</td><td>";   
-  echo $row['des'];
-  echo "</td><td>";    
-  echo $row['status'];
-  echo "</TD></tr>";  
-}
-echo "</table>";
