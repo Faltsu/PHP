@@ -24,8 +24,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     echo '<table class="table table-striped table-bordered table-hover">';
-    while($row = $result->fetch_assoc()) {
-        echo"<TR><TD>Name</TD><TD>Description:</TD></TR>";
+    echo"<TR><TD>Name</TD><TD>Description:</TD></TR>";
+    while($row = $result->fetch_assoc()) {  
         echo "<tr><td>";
         echo $row["MName"];
         echo "</td><td>";
