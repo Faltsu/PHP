@@ -36,10 +36,8 @@
     </div>
     <!--Footer-->
     <div class="footer">
-      <div class="col-sm-12 text-center">
-        <p id="alatunniste">
-        Tehnyt Kim Laakso ja Jarkko Hämäläinen
-        </p>
+      <div class="col-sm-12 text-center"> 
+        <p>Tehnyt Kim Laakso ja Jarkko Hämäläinen</p>
       </div>
     </div>
     <!--container loppuu-->

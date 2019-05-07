@@ -16,11 +16,15 @@ body {
     font-weight: bold;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
-#alatunniste {
+.footer {
     font-size:12px;
-    position: absolute;
+    position: fixed;
+    left:0;
     bottom:0;
     width: 100%;
+    background-color: black;
+    color:white;
+    text-align: center;
 }
 input[type=text]{
     width:100%;
