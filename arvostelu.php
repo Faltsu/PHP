@@ -12,14 +12,13 @@ session_start();
 include_once 'conn.php';
 $id=$_SESSION["id"];
 
-$sql = "INSERT INTO rating (RDesc, Movie_idMovie) VALUES ('$_POST[arvostelukentta]', '$id')";
+$sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$_POST[arvostelukentta]', '$id', '$_POST[arvosana]')";
 // echo "$id";
 echo "<p id=otsikko>Arvostelu tallennettu</p>";
     echo "$_POST[arvostelukentta]. ";
-
+    echo "$_POST[arvosana]";
 if ($conn->query($sql)===TRUE){
    echo "Arvostelu tallennettu!";
-   echo $conn->error;
 }
     else{
         echo "Tallennus epäonnistui";
