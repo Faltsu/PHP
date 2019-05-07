@@ -9,7 +9,7 @@
 <body>
     <div class="col-sm-12 text-center">
         <!-- otsikko div alkaa-->
-<div id="otsikko">
+<div id="lista">
 <?php
 $servername = "127.0.0.1:50367";
 $username = "azure";
