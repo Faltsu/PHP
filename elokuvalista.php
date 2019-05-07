@@ -23,8 +23,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
+    echo '<table class="table table-striped table-bordered table-hover">';
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
+        echo"<TR><TD>Name</TD><TD>Description:</TD></TR>";
+        echo "<tr><td>";
+        echo $row["MName"];
+        echo "</td><td>";
+        echo $row["MDesc"];
+        echo "</TD></tr>";
     }
 } else {
     echo "EI LÖYDY ELOKUVAA!";
@@ -42,3 +48,17 @@ $conn->close();
 <!--css div loppuu-->
 </body>
 </html>
+
+ 
+while($row = mysqli_fetch_array($results))
+{
+  echo"<TR><TD>Name</TD><TD>Description:</TD><TD>Status</TD></TR>"; 
+  echo "<tr><td>"; 
+  echo $row['name'];
+  echo "</td><td>";   
+  echo $row['des'];
+  echo "</td><td>";    
+  echo $row['status'];
+  echo "</TD></tr>";  
+}
+echo "</table>";
