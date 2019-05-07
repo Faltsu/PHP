@@ -10,7 +10,9 @@
 <?php
 include_once 'conn.php';
 
-if ($lisaa=="" OR $arvostelu=="") {
+$testi1=$_POST["lisaa"];
+$testi2=$_POST["arvostelu"];
+if ($testi1=="" OR $testi2=="") {
 	echo "Elokuvalle pitää antaa nimi ja kuvaus. Tallennus peruutettu.";
 	?> <form action="/sivu.php">
         <input type="submit" value="Etusivulle"/>
