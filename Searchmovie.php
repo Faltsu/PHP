@@ -46,7 +46,7 @@ $conn->close();
 <!-- Otsikko div loppuu-->
 </div>
 <?php 
-    if(empty($etsi) or $stop="yes"){ 
+    if(empty($etsi) or $stop=="yes"){ 
       ?>
           <!-- nappi joka palaa etusivulle --> 
         <br>    
