@@ -13,6 +13,7 @@
 session_start();
 include_once 'conn.php';
 $etsi = $_POST["etsi"];
+$stop="no";
 if (empty($etsi)) {
   echo "Et antanut nimeä";
 }
@@ -21,7 +22,6 @@ $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
 $result2=mysqli_query($conn,$sql2);
-
 // Tallenna id arvostelua varten
 $row=mysqli_fetch_array($result2,MYSQLI_NUM);
 $id=$row[0];
