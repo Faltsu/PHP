@@ -29,12 +29,12 @@ if ($result->num_rows > 0) {
 } else {
     echo "EI LÖYDY ELOKUVAA!";
 }
-      <!-- nappi joka palaa etusivulle -->
+$conn->close();
+?>
+          <!-- nappi joka palaa etusivulle -->
         <form action="/sivu.php">
             <input type="submit" value="Etusivulle">
 </form>
-$conn->close();
-?>
 <!--css div loppuu-->
 </div>
 </body>
