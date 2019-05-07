@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-    <div class="col-sm-8 text-center">
+    <div class="col-sm-12 text-center">
         <!-- otsikko div alkaa-->
 <div id="otsikko">
 <?php
