@@ -18,6 +18,7 @@ if (empty($etsi)) {
   echo "Et antanut nimeä";
 }
 else {
+<<<<<<< HEAD
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%?%' LIMIT 1";
 $stmt= mysqli_stmt_init($conn);
 if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -42,6 +43,12 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
   }
 
 
+<<<<<<< HEAD
+=======
+=======
+$sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
+>>>>>>> parent of 5cc2d32... Update Searchmovie.php
+>>>>>>> parent of f569457... Update Searchmovie.php
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result2=mysqli_query($conn,$sql2);
 // Tallenna id arvostelua varten
