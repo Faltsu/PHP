@@ -40,7 +40,7 @@ if (!mysqli_stmt_prepare($stmt, $sql)) {
   $stop="yes";
 }
   }
-}
+
 
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result2=mysqli_query($conn,$sql2);
