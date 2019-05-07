@@ -43,5 +43,6 @@ if ($lisaa=="" OR $arvostelu=="") {
 <?php
 		}
 $conn->close();
+?>
 </body>
 </html>
