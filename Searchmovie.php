@@ -13,6 +13,10 @@
 session_start();
 include_once 'conn.php';
 $etsi = $_POST["etsi"];
+if (etsi="") {
+  echo "Et antanut nimeä"
+}
+else {
 $sql = "SELECT MName,idMovie, MDesc FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $sql2 = "SELECT idMovie, MName FROM movie WHERE MName LIKE '%$etsi%' LIMIT 1";
 $result = $conn->query($sql);
@@ -56,6 +60,8 @@ $conn->close();
       <input type="submit" value="Arvostele elokuva">
       </form>
       <!-- nappi joka palaa etusivulle -->
+      <!-- else loppuu -->
+      }
         <form action="/sivu.php">
             <input type="submit" value="Etusivulle">
         </form>
