@@ -12,7 +12,7 @@
 <?php
 session_start();
 include_once 'conn.php';
-$etsi = $_POST["etsi"];
+$etsi =mysqli_real_escape_string($conn, $_POST["etsi"]);
 $stop="no";
 if (empty($etsi)) {
   echo "Et antanut nimeä";
