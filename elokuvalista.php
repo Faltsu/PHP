@@ -13,7 +13,7 @@
     Elokuvalista
         </div>
         
-<div id="lista2">
+<div id="lista">
 <?php
     include_once 'conn.php';
 
@@ -23,16 +23,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-    echo '<table class="table table-striped table-bordered table-hover">';
-    echo"<TR><TD>Name</TD><TD>Description:</TD></TR>";
-    while($row = $result->fetch_assoc()) {  
-        echo "<tr><td>";
-        echo $row["MName"];
-        echo "</td><td>";
-        echo $row["MDesc"];
-        echo "</TD></tr>";
+    while($row = $result->fetch_assoc()) {
+        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
-    echo "</table>";
 } else {
     echo "EI LÖYDY ELOKUVAA!";
 }
@@ -49,3 +42,4 @@ $conn->close();
 <!--css div loppuu-->
 </body>
 </html>
+
