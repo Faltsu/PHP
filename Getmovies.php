@@ -18,7 +18,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "Select * FROM movie WHERE MName Is Not NULL And MName <> '' And MDesc Is Not NULL And MDesc <> ''";
+$sql = "Select MName, MDesc FROM movie WHERE MName!='' AND MName IS NOT NULL And MDesc Is Not NULL And MDesc <> ''";
 $result = $conn->query($sql);
 
 
