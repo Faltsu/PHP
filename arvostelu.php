@@ -19,7 +19,7 @@ $sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$arvosteluke
 // echo "<p id=otsikko>Arvostelu tallennettu</p>";
 // echo "$_POST[arvostelukentta]. ";
 // echo "$_POST[arvosana]";
-if ($conn->query($sql)===TRUE){
+if ($conn->query($sql)===TRUE and $arvostelukentta!=""){
    echo "<p id=otsikko>Arvostelu tallennettu</p>";
 }
     else{
