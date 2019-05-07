@@ -6,6 +6,16 @@
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+<!--Headeri-->
+<div class="header">
+  <div class="col-sm-12 text-center">
+    <p id="oikeeotsikko">
+      Elokuvadatabase
+    </p>
+  </div>
+</div>
+<!--container-->
+<div class="container">
     <div class="col-sm-12 text-center">
         <!-- otsikko div alkaa-->
         <div id="otsikko">
@@ -79,6 +89,14 @@ $conn->close();
             <input type="submit" value="Etusivulle">
         </form>
  </div>
+ <!--Footer-->
+ <div class="footer">
+      <div class="col-sm-12 text-center"> 
+        <p>Tehnyt Kim Laakso ja Jarkko Hämäläinen</p>
+      </div>
+    </div>
+    <!--container loppuu-->
+    </div>
  <?php
 }  
 ?>
