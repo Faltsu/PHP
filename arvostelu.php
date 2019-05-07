@@ -21,7 +21,7 @@ if ($conn->query($sql)===TRUE){
    echo "<p id=otsikko>Arvostelu tallennettu</p>";
 }
     else{
-        echo "<p id=otsikko>Arvostelua ei tallennettu. Tarkista että annoit arvosanan ja arvostelusi on alle 300 merkkiä pitkä</p>";
+        echo "<p id=otsikko>Arvostelua ei tallennettu. Tarkista, että annoit arvosanan ja arvostelusi on alle 300 merkkiä pitkä</p>";
     }
 
 
