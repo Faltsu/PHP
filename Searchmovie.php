@@ -38,7 +38,8 @@ if ($result->num_rows > 0) {
 	echo $etsi;
 	echo " nimistä elokuvaa ei löydy.";
 }
-
+//<!-- else loppuu -->
+}
 $conn->close();
 ?>
 <!-- Otsikko div loppuu-->
@@ -59,9 +60,7 @@ $conn->close();
     <br>
       <input type="submit" value="Arvostele elokuva">
       </form>
-      <!-- nappi joka palaa etusivulle -->
-      <!-- else loppuu -->
-      }
+      <!-- nappi joka palaa etusivulle -->     
         <form action="/sivu.php">
             <input type="submit" value="Etusivulle">
         </form>
