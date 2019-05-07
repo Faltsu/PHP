@@ -7,7 +7,6 @@ body {
 }
 #otsikko{
     font-size: 30px;
-    text-decoration: underline;
     font-weight: bold;
 }
 input[type=text]{
