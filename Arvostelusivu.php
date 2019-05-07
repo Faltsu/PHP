@@ -45,6 +45,7 @@ $conn->close();
             <input type="submit" value="Etusivulle">
         </form>
         </div> 
+    </div>
 <!--css div loppuu-->
 </body>
 </html>
