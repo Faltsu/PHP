@@ -37,6 +37,7 @@ $conn->close();
         <form action="/sivu.php">
             <input type="submit" value="Etusivulle">
         </form>
+        </div>
         </div> 
 <!--css div loppuu-->
 </body>
