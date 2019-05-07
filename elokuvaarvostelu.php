@@ -9,6 +9,7 @@
     <div class="row">
      <div class=col-sm-12>
        <textarea name="arvostelukentta" form="arvosteluform">Kirjoita arvostelu tähän</textarea>
+       <textarea name="arvostelukentta2" form="arvosteluform2">Anna arvosana väliltä 4-10</textarea>
        <form action="arvostelu.php" id="arvosteluform">
          <input type="submit" name="Tallenna arvostelu">
        </form>
