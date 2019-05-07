@@ -18,7 +18,7 @@
 session_start();
 include_once 'conn.php';
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
-echo $id;
+//echo $id;
 $sql = "SELECT MName, MDesc FROM movie WHERE idMovie=$id";
 $sql2= "SELECT rating.RRating, rating.RDesc  FROM rating INNER JOIN movie ON movie.idMovie=rating.movie_idMovie WHERE movie.idMovie=$id";
 $result = $conn->query($sql);
@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
 if ($result2->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Numero: ". $row["RRating"]. " - Kuvaus: ". $row["RDesc"];
+        echo "<br> Numero: ". $row["rating.RRating"]. " - Kuvaus: ". $row["rating.RDesc"];
     }
 }
 $conn->close();
