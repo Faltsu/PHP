@@ -10,7 +10,7 @@
 <div class="header">
   <div class="col-sm-12 text-center">
     <p id="oikeeotsikko">
-      Elokuvadatabase222
+      Elokuvadatabase
     </p>
   </div>
 </div>
