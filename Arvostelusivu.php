@@ -15,6 +15,7 @@
         
 <div id="lista">
 <?php
+session_start();
 include_once 'conn.php';
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 echo $id;
