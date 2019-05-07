@@ -17,9 +17,9 @@
 <?php
 include_once 'conn.php';
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
-
-$sql = "Select MName, MDesc FROM movie WHERE idMovie=$id";
-$sql2= "Select rating.RRating, rating.RDesc FROM rating INNER JOIN movie ON movie.idMovie=rating.movie_idMovie;";
+echo $id;
+$sql = "SELECT MName, MDesc FROM movie WHERE idMovie=$id";
+$sql2= "SELECT rating.RRating, rating.RDesc FROM rating INNER JOIN movie ON movie.idMovie=rating.movie_idMovie;";
 $result = $conn->query($sql);
 $result2 = $conn->query($sql2)
 ;
