@@ -1,11 +1,9 @@
 body {
     background: linear-gradient(to bottom, #ffffff 56%, #009933 100%);
-    border-top: 2px double;
-    border-bottom: 2px double;
+    border-top: double;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 #otsikko{
     font-size: 30px;
