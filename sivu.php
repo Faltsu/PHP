@@ -11,7 +11,6 @@
         <p id="otsikko">Etsi elokuva antamalla elokuvan nimi
           <br>
           Lisää elokuva painamalla "Lisää elokuva"</p>
-          
       </div>
     <div class="col-sm-12 text-center">
       <form action="Searchmovie.php" method="post">
