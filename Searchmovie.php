@@ -52,6 +52,7 @@ $conn->close();
     <option value="9">9</option>
     <option value="10">10</option>
   </select>
+    <br>
       <input type="submit" value="Arvostele elokuva">
       </form>
       <!-- nappi joka palaa etusivulle -->
