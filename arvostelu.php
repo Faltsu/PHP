@@ -13,7 +13,9 @@ include_once 'conn.php';
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 $arvostelukentta =mysqli_real_escape_string($conn, $_POST[arvostelukentta]);
 $arvosana =mysqli_real_escape_string($conn, $_POST[arvosana]);
-if (empty($arvostelukentta) or empty($arvosana)){}
+if (empty($arvostelukentta) or empty($arvosana)){
+	echo "<p id=otsikko>Arvostelua ei tallennettu. Tarkista, että annoit arvosanan, kirjoitit arvostelun ja se on alle 300 merkkiä pitkä</p>";
+}
 	else {
 $sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$arvostelukentta', '$id', '$arvosana')";
 // echo "$id";
