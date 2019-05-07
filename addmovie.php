@@ -9,35 +9,39 @@
 <div class="col-sm-12 text-center">
 <?php
 include_once 'conn.php';
-$lisaa =mysqli_real_escape_string($conn, $_POST["lisaa"]);
-$arvostelu =mysqli_real_escape_string($conn, $_POST["arvostelu"]);
-$sql = "INSERT INTO movie (MName, MDesc) VALUES ('$lisaa', '$arvostelu')";
+
 if ($lisaa=="" OR $arvostelu=="") {
-	echo "Elokuvalle pitää antaa nimi ja kuvaus. Tallennus peruutettu."
+	echo "Elokuvalle pitää antaa nimi ja kuvaus. Tallennus peruutettu.";
 	?> <form action="/sivu.php">
         <input type="submit" value="Etusivulle"/>
       </form>
     <?php
 }
-	else {
+	else 
+		{
+			$lisaa =mysqli_real_escape_string($conn, $_POST["lisaa"]);
+			$arvostelu =mysqli_real_escape_string($conn, $_POST["arvostelu"]);
+			$sql = "INSERT INTO movie (MName, MDesc) VALUES ('$lisaa', '$arvostelu')";
+		
+			if ($conn->query($sql)===TRUE)
+			{
+   			echo "<p id=otsikko>Tallennettu";
 
-if ($conn->query($sql)===TRUE){
-   echo "<p id=otsikko>Tallennettu";
-
-}
-    else{
+			}
+    		else
+    		{
         echo "<p id=otsikko>Tallennus epäonnistui";
-    }
+    		}
 
 
 
-?>
+	?>
 <form action="/sivu.php">
         <input type="submit" value="Etusivulle"/>
       </form>
 </div>
 <?php
-}
+		}
 $conn->close();
 </body>
 </html>
