@@ -16,12 +16,12 @@ $sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$_POST[arvos
 // echo "$id";
 echo "<p id=otsikko>Arvostelu tallennettu</p>";
     echo "$_POST[arvostelukentta]. ";
-    echo "$_POST[arvosana]";
+ //   echo "$_POST[arvosana]";
 if ($conn->query($sql)===TRUE){
-   echo "Arvostelu tallennettu!";
+   echo "<p id=otsikko>Arvostelu tallennettu</p>";
 }
     else{
-        echo "Tallennus epäonnistui";
+        echo "<p id=otsikko>Arvostelua ei tallennettu. Tarkista että annoit arvosanan ja arvostelusi on alle 300 merkkiä pitkä</p>";
     }
 
 
