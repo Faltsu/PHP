@@ -28,7 +28,9 @@ $result2 = $conn->query($sql2);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
+        ?><div id="otsikko"> <?php
         echo "<br> Elokuvan Nimi: ". $row["MName"]. " - Kuvaus: ". $row["MDesc"];
+        ?> </div> <?php
     }
 }
 if ($result2->num_rows > 0) {
