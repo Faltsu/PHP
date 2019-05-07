@@ -16,9 +16,12 @@
 <div id="lista">
 <?php
 include_once 'conn.php';
+$id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 
-$sql = "Select MName, MDesc FROM movie WHERE MName!='' AND MName IS NOT NULL And MDesc Is Not NULL And MDesc <> ''";
+$sql = "Select MName, MDesc FROM movie WHERE idMovie=$id";
+$sql2= "Select rating.Rrating, rating.RDesc FROM movie JOIN rating ON movie.idMovie = rating.movie_idMovie"
 $result = $conn->query($sql);
+$result2 = $conn->query($sql2);
 
 
 if ($result->num_rows > 0) {
@@ -26,8 +29,12 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
     }
-} else {
-    echo "EI LÖYDY ELOKUVAA!";
+}
+if ($result2->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
+    }
 }
 $conn->close();
 ?>
