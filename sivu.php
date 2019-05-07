@@ -6,6 +6,15 @@
   <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
+<!--Headeri-->
+<div class="header">
+  <div class="col-sm-12 text-center">
+    <p id="otsikko">
+      Elokuvadatabase
+    </p>
+  </div>
+</div>
+<!--Sisältö-->
   <div class="container">
       <div class="col-sm-12 text-center">
         <p id="otsikko">Etsi elokuva antamalla elokuvan nimi
