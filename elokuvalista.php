@@ -33,7 +33,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> Name: ". $row["MName"]. " - Description: ". $row["MDesc"];
+        echo "<br> Nimi: ". $row["MName"]. " - Kuvaus: ". $row["MDesc"];
     }
 } else {
     echo "EI LÖYDY ELOKUVAA!";
