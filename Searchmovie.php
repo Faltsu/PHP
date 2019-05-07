@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
     }
 } else {
 	echo $etsi;
-	echo "Elokuvaa ei löydy.";
+	echo " Elokuvaa ei löydy.";
 }
 
 $conn->close();
