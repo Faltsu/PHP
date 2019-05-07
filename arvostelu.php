@@ -10,9 +10,11 @@
 <?php
 session_start();
 include_once 'conn.php';
-$id=$_SESSION["id"];
+$id =mysqli_real_escape_string($conn, $_SESSION["id"]);
+$arvostelukentta =mysqli_real_escape_string($conn, $_POST[arvostelukentta]);
+$arvosana =mysqli_real_escape_string($conn, $_POST[arvosana]);
 
-$sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$_POST[arvostelukentta]', '$id', '$_POST[arvosana]')";
+$sql = "INSERT INTO rating (RDesc, Movie_idMovie, Rrating) VALUES ('$arvostelukentta', '$id', '$arvosana')";
 // echo "$id";
 // echo "<p id=otsikko>Arvostelu tallennettu</p>";
 // echo "$_POST[arvostelukentta]. ";
