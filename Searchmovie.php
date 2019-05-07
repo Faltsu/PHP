@@ -37,6 +37,7 @@ if ($result->num_rows > 0) {
 } else {
 	echo $etsi;
 	echo " nimistä elokuvaa ei löydy.";
+  $stop="yes";
 }
 //<!-- else loppuu -->
 }
@@ -45,7 +46,7 @@ $conn->close();
 <!-- Otsikko div loppuu-->
 </div>
 <?php 
-    if(empty($etsi)){ 
+    if(empty($etsi) or $stop="yes"){ 
       ?>
           <!-- nappi joka palaa etusivulle --> 
         <br>    
