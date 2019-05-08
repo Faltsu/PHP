@@ -42,7 +42,6 @@ $sql = "DELETE FROM movie WHERE idMovie='$id'";
       </form>
 </div>
 <?php
-		}
 $conn->close();
 ?>
 </div>
