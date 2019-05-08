@@ -75,6 +75,9 @@ $conn->close();
   <form action="/poisto.php" >
     <input type="submit" value="Poista elokuva" onclick="return confirm('Oletko varma, että haluat poistaa elokuvan? Tämä poistaa myös arvostelut.');">
   </form>
+  <form action="/kuvaus.php" >
+    <input type="submit" value="Vaihda elokuvan kuvaus">
+  </form>
       <form action="arvostelu.php" method="post">
       <input type="text" name="arvostelukentta">
   <select name="arvosana">
