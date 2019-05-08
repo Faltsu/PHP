@@ -73,7 +73,7 @@ $conn->close();
     <input type="submit" value="Katso elokuvan arvostelut">
   </form>
   <form action="/poisto.php" >
-    <input type="submit" value="Poista elokuva" onclick="return poisto()">
+    <input type="submit" value="Poista elokuva">
   </form>
       <form action="arvostelu.php" method="post">
       <input type="text" name="arvostelukentta">
