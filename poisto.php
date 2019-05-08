@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<script src="js.js"></script>
 <meta charset="UTF-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css.css">
@@ -20,6 +21,7 @@
 <?php
 include_once 'conn.php';
 session_start();
+$varmista=confirm("oletko varma että haluat poistaa elokuvan? Tämä poistaa myös arvostelut.");
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 
 $sql = "DELETE FROM movie WHERE idMovie='$id'";
