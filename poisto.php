@@ -22,6 +22,8 @@
 include_once 'conn.php';
 session_start();
 $varmista=confirm("oletko varma että haluat poistaa elokuvan? Tämä poistaa myös arvostelut.");
+
+if($varmista==TRUE) {
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 
 $sql = "DELETE FROM movie WHERE idMovie='$id'";
@@ -37,7 +39,7 @@ $sql = "DELETE FROM movie WHERE idMovie='$id'";
     		}
 
 
-
+}
 	?>
 <form action="/sivu.php">
         <input type="submit" value="Etusivulle"/>
