@@ -26,12 +26,12 @@ $sql = "UPDATE movie SET MDesc = '$kuvaus' WHERE idMovie='$id'";
 		
 			if ($conn->query($sql)===TRUE)
 			{
-   			echo "<p id=otsikko>Poistettu";
+   			echo "<p id=otsikko>Kuvaus päivitetty";
 
 			}
     		else
     		{
-        echo "<p id=otsikko>Poisto epäonnistui";
+        echo "<p id=otsikko>Päivitys epäonnistui";
     		}
 
 
