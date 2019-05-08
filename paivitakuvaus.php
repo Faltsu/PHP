@@ -21,7 +21,7 @@
 include_once 'conn.php';
 session_start();
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
-$kuvaus =mysqli_real_escape_string($conn, $_POST[kuvausform]);
+$kuvaus =mysqli_real_escape_string($conn, $_POST[kuvaus]);
 $sql = "UPDATE movie SET MDesc = '$kuvaus' WHERE idMovie='$id'";
 		
 			if ($conn->query($sql)===TRUE)
