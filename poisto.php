@@ -22,7 +22,7 @@ include_once 'conn.php';
 session_start();
 $id =mysqli_real_escape_string($conn, $_SESSION["id"]);
 
-$sql = "DELETE movie, rating FROM movie INNER JOIN rating ON rating.movie_idMovie = movie.idMovie WHERE idMovie='$id'";
+$sql = "DELETE FROM movie WHERE idMovie='$id'";
 		
 			if ($conn->query($sql)===TRUE)
 			{
